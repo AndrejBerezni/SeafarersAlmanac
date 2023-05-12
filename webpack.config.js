@@ -10,7 +10,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             title: "Seafarer's Almanac",
-            favicon: ''
+            favicon: './src/assets/favicon.ico'
         })
     ],
     output: {
