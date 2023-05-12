@@ -170,7 +170,9 @@ video {
     --lightTextColor: #e2e3dd;
     --hoverTextColor: #f4cea1;
     --hoverTextColor2: #d6aa75;
-    --darkAccentColor: #795e42
+    --darkAccentColor: #795e42;
+    --wideScreenMain: #596c6cad;
+    --normalScreenMain: #51473e;
 }
 
 body {
