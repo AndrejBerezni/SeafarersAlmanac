@@ -18,6 +18,7 @@ function loadForm(container) {
     submit.innerText = "Hoist the Sails!"
     // Add attributes
     form.id = 'location-form';
+    form.classList.add('hidden');
 
     latitudeLabel.setAttribute('for', 'latitude');
     longitudeLabel.setAttribute('for', 'longitude');
@@ -53,6 +54,15 @@ function loadForm(container) {
     form.appendChild(submit);
 
     container.appendChild(form);
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        })
+    })
+
+    observer.observe(form);
 };
 
 export default function loadMain() {
@@ -60,6 +70,7 @@ export default function loadMain() {
     main.id = 'main-container';
 
     loadForm(main);
+
 
     document.body.appendChild(main);
 }

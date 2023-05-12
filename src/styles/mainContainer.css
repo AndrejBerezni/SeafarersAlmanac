@@ -86,13 +86,10 @@
   transform: translateX(5px);
   cursor: pointer;
   background-color: var(--navBg);
-  color: var(--hoverTextColor);
+  color: var(--normalScreenMain);
 }
 
 @media (max-width: 500px) {
-  #main-container {
-    /* justify-content: center; */
-  }
 
   #location-form {
     width: 60%;

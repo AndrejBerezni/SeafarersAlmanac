@@ -17,3 +17,15 @@
     transform: translatey(2px) scale(1.05);
     color: var(--hoverTextColor)
 }
+
+@media (max-width: 600px) {
+    #footer > a {
+        font-size: 22px;
+    }
+
+    #footer {
+        min-height: 5vh;
+        justify-content: space-between;
+        padding: 0 7vw;
+    }
+}
