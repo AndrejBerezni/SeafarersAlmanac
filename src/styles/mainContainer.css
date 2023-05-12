@@ -84,7 +84,7 @@
   transform: translateX(5px);
   cursor: pointer;
   background-color: var(--navBg);
-  /* box-shadow: 0px 4px 2px #51473e91; */
+  color: var(--hoverTextColor);
 }
 
 @media (max-width: 820px) {
@@ -111,6 +111,11 @@
   #location-form > input {
     max-width: 90%;
   }
+
+  #location-form > button {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -134,9 +139,6 @@
   }
 
   #location-form > label {
-    /* text-shadow: none; */
     font-weight: bold;
-
   }
-
 }
