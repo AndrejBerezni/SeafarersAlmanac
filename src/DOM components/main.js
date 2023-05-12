@@ -11,10 +11,10 @@ function loadForm(container) {
     const submit = document.createElement('button');
 
     // Add text
-    askCoordinates.innerText = "Ahoy there, sailor! Could ye lend a hand and give us the ol' coordinates?"
+    askCoordinates.innerText = "Ahoy there, sailor! Give us your coordinates and we will tell you weather conditions for sailing!"
     latitudeLabel.innerText = "Latitude";
     longitudeLabel.innerText = "Longitude";
-    askLocation.innerText = "If ye don't know the coordinates, tell me where yer be setting sail from and we'll plot our course accordingly:"
+    askLocation.innerText = "If you don't know the coordinates, tell us your location:"
     submit.innerText = "Hoist the Sails!"
     // Add attributes
     form.id = 'location-form';

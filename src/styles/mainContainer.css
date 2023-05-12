@@ -15,7 +15,7 @@
   min-height: 70%;
   max-height: 98%;
   margin-left: 5vw;
-  background-color: #b2b49daf;
+  background-color: var(--sectionBgGlass);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 3px solid var(--normalScreenMain);
@@ -37,7 +37,8 @@
   font-size: 1.4rem;
   margin-bottom: 1.5vh;
   width: min-content;
-  background-color: #51473e91;
+  max-width: 96%;
+  background-color: var(--normalScreenGlass);
   font-weight: bold;
   padding-left: 10px;
   border: 3px solid var(--normalScreenMain);
@@ -72,7 +73,7 @@
   padding: 10px 20px;
   font-size: 1.2rem;
   box-shadow: 0px 2px 4px var(--navBg);
-  background-color: #51473e91;
+  background-color: var(--normalScreenGlass);
   border: none;
   color: var(--lightTextColor);
   text-shadow: 1px 1px 2px var(--navBg);
@@ -88,33 +89,38 @@
   color: var(--hoverTextColor);
 }
 
-@media (max-width: 820px) {
+@media (max-width: 500px) {
   #main-container {
-    justify-content: center;
+    /* justify-content: center; */
   }
 
   #location-form {
-    width: 90%;
-    margin: 5vh 0;
+    width: 60%;
+    margin: 5vh 2vw;
     padding: 20px;
     align-items: center;
   }
 
   #location-form > h1 {
-    font-size: 1rem;
+    font-size: 12px;
     text-align: justify;
   }
 
   #location-form > label {
-    font-size: 0.9rem;
+    font-size: 11px;
   }
 
   #location-form > input {
-    max-width: 90%;
+    max-width: 96%;
+    text-align: center;
+  }
+
+  #location-form > label:nth-of-type(3) {
+    font-size: 12px;
   }
 
   #location-form > button {
-    font-size: 1rem;
+    font-size: 14px;
     padding: 5px 10px;
   }
 }
@@ -141,5 +147,7 @@
 
   #location-form > label {
     font-weight: bold;
+    color: var(--lightTextColor);
+    text-shadow: 1px 1px 1px var(--navBg);
   }
 }
