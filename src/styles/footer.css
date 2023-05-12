@@ -1,0 +1,19 @@
+#footer {
+    background-color: var(--footerBg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7vw;
+}
+
+#footer > a {
+    font-size: 2rem;
+    color: var(--navBg);
+    filter: drop-shadow(0px 0.5px 1px var(--darkAccentColor));
+    transition: .4s;
+}
+
+#footer > a:hover {
+    transform: translatey(2px) scale(1.05);
+    color: var(--hoverTextColor)
+}

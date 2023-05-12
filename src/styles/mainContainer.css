@@ -1,0 +1,16 @@
+#main-container {
+    background: url('../assets/images/almanacbg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+@media (min-width: 1200px) {
+    #main-container {
+        background: url('../assets/images/almanacbgwide.png');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+
+}
