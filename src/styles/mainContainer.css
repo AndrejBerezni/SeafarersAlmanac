@@ -13,6 +13,7 @@
   flex-direction: column;
   width: 50%;
   min-height: 70%;
+  max-height: 98%;
   margin-left: 5vw;
   background-color: #b2b49daf;
   backdrop-filter: blur(10px);
