@@ -1,4 +1,4 @@
-function loadForm(container) {
+function loadForm(container, lat, lon) {
     // Create elements
     const form = document.createElement('form');
     const askCoordinates = document.createElement('h1');
@@ -60,6 +60,12 @@ function loadForm(container) {
                 entry.target.classList.add('show');
             }
         })
+    });
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        lat = latitude.value;
+        lon = longitude.value;
     })
 
     observer.observe(form);
