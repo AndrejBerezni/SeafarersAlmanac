@@ -5,11 +5,15 @@
     flex-wrap: wrap;
     gap: 3vw;
     padding: 1vh 0;
+    height: 300px;
+    overflow-y: scroll;
 }
 
 .element-div {
     display: flex;
+    height: 250px;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     gap: 2vh;
     border: 2px solid var(--footerBg);
@@ -17,22 +21,71 @@
     border-radius: 5px;
     background-color: var(--lightTextColor);
     margin: 20px;
-    min-width: 200px;
+    min-width: 250px;
     box-shadow: 1px 3px 2px var(--navBg);
+    transition: .3s;
 }
+
 .element-div > h1 {
     font-family: var(--titleFont);
     font-size: 1.2rem;
     text-align: center;
+    transition: .3s;
 }
 
 .element-div > p {
     font-family: var(--textFont);
     font-size: 1.6rem;
+    transition: .3s;
+}
+
+.element-div >p:hover, .element-div >h1:hover {
+    cursor: default;
 }
 
 .element-div > svg {
     font-size: 2rem;
     color: var(--hoverTextColor2);
-    filter: drop-shadow(1px 1px 1px var(--navBg))
+    filter: drop-shadow(1px 1px 1px var(--navBg));
+    transition: .3s;
+}
+
+.element-div:hover {
+    transform: scale(1.1);
+}
+
+.element-div:hover > h1, .element-div:hover > p {
+    text-shadow: 1px 1px 1px var(--footerBg);
+    font-weight: bold;
+    transform: scaleX(1.1);
+}
+
+.element-div:hover > svg {
+    transform: scale(1.5);
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    max-width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: var(--lightTextColor);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--footerBg);
+    border-radius: 5px;
+  }
+
+@media (max-height: 800px) {
+    #panel {
+        gap: 2vh;
+        height: 250px;
+    }
+
+    .element-div {
+        height: 220px;
+        margin: 5px;
+    }
 }

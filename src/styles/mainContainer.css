@@ -26,8 +26,6 @@
   gap: 30px;
 }
 
-
-
 #location-form > input {
   font-family: var(--textFont);
   font-size: 1.4rem;
@@ -41,7 +39,11 @@
   box-shadow: 0px 2px 4px var(--navBg);
 }
 
-
+#location-form > input::placeholder {
+  color: var(--lightTextColor);
+  font-style: italic;
+  font-family: var(--titleFont);
+}
 
 #location-form > label {
   font-family: var(--textFont);
@@ -51,10 +53,9 @@
   line-height: 1.5;
 }
 
-
 #location-form > button {
   width: fit-content;
-  height: 5vh;
+  height: fit-content;
   font-family: var(--textFont);
   /* font-weight: bold; */
   padding: 10px 20px;
@@ -77,7 +78,6 @@
 }
 
 @media (max-width: 500px) {
-
   #location-form {
     width: 60%;
     margin: 5vh 2vw;
@@ -119,5 +119,4 @@
     background-size: cover;
     justify-content: flex-end;
   }
-
 }

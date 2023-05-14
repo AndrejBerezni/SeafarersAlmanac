@@ -10,30 +10,11 @@ function loadForm(container, city) {
 
     // Add text
     askLocation.innerText = "Ahoy there, sailor! Where will you be setting sail from?"
-    submit.innerText = "Hoist the Sails!"
+    submit.innerText = "Check conditions"
+
     // Add attributes
     form.id = 'location-form';
     form.classList.add('hidden');
-
-    // latitudeLabel.setAttribute('for', 'latitude');
-    // longitudeLabel.setAttribute('for', 'longitude');
-    // askLocation.setAttribute('for', 'location');
-
-    // latitude.id ='latitude';
-    // latitude.setAttribute('required', '');
-    // latitude.setAttribute('type', 'number');
-    // latitude.setAttribute('step', 'any');
-    // latitude.setAttribute('name', 'latitude');
-    // latitude.setAttribute('max', '90');
-    // latitude.setAttribute('min', '-90');
-
-    // longitude.id ='longitude';
-    // longitude.setAttribute('required', '');
-    // longitude.setAttribute('type', 'number');
-    // longitude.setAttribute('step', 'any');
-    // longitude.setAttribute('name', 'longitude');
-    // longitude.setAttribute('max', '180');
-    // longitude.setAttribute('min', '-180');
 
     location.id = 'location';
     location.setAttribute('type', 'text');

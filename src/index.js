@@ -10,6 +10,6 @@ import "@fortawesome/fontawesome-free/js/brands";
 
 import loadHome from './js/DOM components/loadHome';
 
-let city = 'Lisbon';
+let city = '';
 
 loadHome(city);
