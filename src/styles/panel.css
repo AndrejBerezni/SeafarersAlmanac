@@ -1,3 +1,37 @@
 #panel {
     background-color: var(--sectionBg);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3vw;
+}
+
+.element-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    border: 2px solid var(--footerBg);
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--lightTextColor);
+    margin: 20px;
+    min-width: 200px;
+    box-shadow: 1px 3px 2px var(--navBg);
+}
+.element-div > h1 {
+    font-family: var(--titleFont);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.element-div > p {
+    font-family: var(--textFont);
+    font-size: 1.6rem;
+}
+
+.element-div > svg {
+    font-size: 2rem;
+    color: var(--hoverTextColor2);
+    filter: drop-shadow(1px 1px 1px var(--navBg))
 }

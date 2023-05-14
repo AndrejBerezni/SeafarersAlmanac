@@ -10,6 +10,18 @@ const icons = {
     "UV Index": 'fa-sun',
 }
 
+const units = {
+    "Wind Speed": 'km/h',
+    "Wind Direction": '',
+    Temperature: '°C',
+    Precipitation: 'mm',
+    "Atmospheric Pressure": 'mb',
+    "Wave Height": 'm',
+    "Wave Direction": '°',
+    "Cloud Coverage": '%',
+    "UV Index": '',
+}
+
 function loadDataToPanel(data) {
     // Clear panel
     const panel = document.getElementById('panel');
@@ -18,21 +30,29 @@ function loadDataToPanel(data) {
     // Create elements
     for (let [key, value] of Object.entries(data)) {
         const elementDiv = document.createElement('div');
-        elementDiv.classList.add('element-div');
+        elementDiv.classList.add('element-div', 'hidden');
 
         const elementName = document.createElement('h1');
-        elementName.innerText = `${key}:`
+        elementName.innerText = `${key}`
 
         const elementValue = document.createElement('p');
-        elementValue.innerText = value;
+        elementValue.innerText = `${value}${units[key]}`;
 
         const elementIcon = document.createElement('icon');
         elementIcon.classList.add('fas', icons[key])
 
+        elementDiv.appendChild(elementIcon);
         elementDiv.appendChild(elementName);
         elementDiv.appendChild(elementValue);
-        elementDiv.appendChild(elementIcon);
-
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            })
+        });
+        observer.observe(elementDiv);
         panel.appendChild(elementDiv);
     }
 }
