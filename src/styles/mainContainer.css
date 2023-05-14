@@ -6,6 +6,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  padding: 5vh 5vw;
 }
 
 #location-form {
@@ -16,8 +17,6 @@
   max-width: 50%;
   min-height: 40%;
   max-height: 98%;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
   background-color: var(--sectionBgGlass);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -119,10 +118,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: flex-end;
-  }
-
-  #location-form {
-    margin-right: 5vw;
   }
 
 }

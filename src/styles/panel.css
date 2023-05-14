@@ -4,6 +4,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 3vw;
+    padding: 1vh 0;
 }
 
 .element-div {

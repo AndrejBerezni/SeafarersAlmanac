@@ -1,3 +1,6 @@
+import getWeatherData from "../getWeatherData";
+import { loadDataToPanel } from "./panel";
+
 function loadForm(container, city) {
     // Create elements
     const form = document.createElement('form');
@@ -35,7 +38,7 @@ function loadForm(container, city) {
     location.id = 'location';
     location.setAttribute('type', 'text');
     location.setAttribute('required', '');
-    location.value = city;
+    location.setAttribute('placeholder', 'Enter location...');
 
     // Append elements
     form.appendChild(askLocation);
@@ -51,9 +54,11 @@ function loadForm(container, city) {
         })
     });
 
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
         e.preventDefault();
         city = location.value;
+        const data = await getWeatherData(city);
+        loadDataToPanel(data);
     })
 
     observer.observe(form);
