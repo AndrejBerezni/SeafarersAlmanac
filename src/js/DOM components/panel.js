@@ -28,6 +28,7 @@ function checkUnits(key, value, p) {
       p.style.color = "green";
     } else if (value > 35 && value < 40) {
       p.style.color = "yellow";
+      p.style.fontWeight = "bold";
     } else {
       p.style.color = "red";
     }
@@ -36,6 +37,7 @@ function checkUnits(key, value, p) {
       p.style.color = "green";
     } else if (value > 35 && value < 40) {
       p.style.color = "yellow";
+      p.style.fontWeight = "bold";
     } else {
       p.style.color = "red";
     }
@@ -44,6 +46,7 @@ function checkUnits(key, value, p) {
       p.style.color = "green";
     } else if (value > 10 && value < 15) {
       p.style.color = "yellow";
+      p.style.fontWeight = "bold";
     } else {
       p.style.color = "red";
     }
@@ -58,6 +61,7 @@ function checkUnits(key, value, p) {
       p.style.color = "green";
     } else if (value > 2 && value <= 3) {
       p.style.color = "yellow";
+      p.style.fontWeight = "bold";
     } else {
       p.style.color = "red";
     }
@@ -66,6 +70,7 @@ function checkUnits(key, value, p) {
       p.style.color = "green";
     } else if (value > 30 && value < 60) {
       p.style.color = "yellow";
+      p.style.fontWeight = "bold";
     } else {
       p.style.color = "red";
     }
@@ -74,6 +79,7 @@ function checkUnits(key, value, p) {
       p.style.color = "green";
     } else if (value === 6) {
       p.style.color = "yellow";
+      p.style.fontWeight = "bold";
     } else {
       p.style.color = "red";
     }
