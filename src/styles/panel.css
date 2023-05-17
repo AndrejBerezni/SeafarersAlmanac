@@ -89,16 +89,3 @@
         margin: 5px;
     }
 }
-
-@media (max-width: 600px) {
-    #panel {
-        scroll-snap-type: y mandatory;
-        scroll-padding-top: 10px;
-        scroll-behavior: smooth;
-    }
-
-    .element-div {
-        scroll-snap-align: start;
-        scroll-snap-stop: always;
-    }
-}
